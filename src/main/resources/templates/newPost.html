@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログ管理</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>ブログ管理</h1>
+        <nav>
+            <a class="nav-link" href="/posts/">投稿一覧</a>
+            <a class="nav-link" href="/posts/new">新規投稿</a>
+        </nav>
+    </header>
+    <main>
+        <section class="new-post">
+            <h2>新規投稿</h2>
+            <form action="#" th:action="@{/posts/new}" method="post">
+                <div>
+                    <input type="text" id="title" name="title" placeholder="タイトル" required>
+                </div>
+                <div>
+                    <textarea id="content" name="content" placeholder="内容" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">投稿する</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ブログサイト</p>
+    </footer>
+</body>
+</html>

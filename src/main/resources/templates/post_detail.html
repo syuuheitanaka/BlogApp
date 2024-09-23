@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投稿詳細</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>投稿詳細</h1>
+        <nav>
+            <a href="/posts/">投稿一覧に戻る</a>
+        </nav>
+    </header>
+    <main>
+        <div class="post-detail">
+            <h2 th:text="${post.title}"></h2>
+            <p th:text="${post.content}"></p>
+            <p>作成日時: <span th:text="${@dateTimeService.formatDateTime(post.createdAt)}"></span></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 ブログサイト</p>
+    </footer>
+</body>
+</html>
