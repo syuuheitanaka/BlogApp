@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: BlogApp
-    env: static  # ここを修正
-    buildCommand: "./mvnw clean package"
-    startCommand: "java -jar target/BlogApp-0.0.1-SNAPSHOT.jar"
-    plan: free  # 無料プランを指定
