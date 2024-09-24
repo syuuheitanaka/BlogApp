@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>BlogApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<name>BlogApp</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
